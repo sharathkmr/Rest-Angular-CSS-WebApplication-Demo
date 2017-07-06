@@ -1,0 +1,132 @@
+/* reseting the styles */
+a {
+    color: #000;
+}
+
+/* actual styling begins here */
+body {
+    background-color: rgba(134,199,235,0.92);
+    font-family: Georgia, Serif, Arial;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: rgba(235,166,125,0.92);
+    border-radius: 10px;
+    height: 105px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px grey;
+    border-style: outset;
+    padding: 10px;
+}
+
+.header h5 {
+    margin-top: 8%;
+}
+
+.header h5 a {
+    float: right;
+    text-decoration: none;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+
+.header h5 a:hover {
+    background-color: black;
+    color: white;
+    border-style: inset;
+}
+
+
+.sideNav {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 390px;
+    background-color: rgba(235,166,125,0.92);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    border-style: ridge;
+    float: left;
+}
+
+.sideNav ul {
+    list-style-type: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.sideNav ul li {
+    padding: 10px;;
+}
+
+.sideNav ul li a {
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 8px;
+    color: black;
+}
+
+.sideNav ul li a:hover {
+    color: white;
+    background-color: black;
+    border-style: inset;
+}
+
+/*.sideNav ul li:hover {
+    background-color: black;
+    color: white;
+    border-style: inset;
+}*/
+
+.content {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(235,166,125,0.92);
+    float: left;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+    border-style: ridge;
+    align-content: left;
+}
+
+.content h3 {
+    text-align: right;
+}
+
+.content table {
+    margin-top: 10%;
+    padding: 10px;
+    border-collapse: collapse;
+    border-style: inset;
+}
+
+.content table tr th {
+    padding:8px;
+    border: 1px solid black;
+    font-style: italic;
+    color: rgba(235,35,22,0.92);
+}
+
+.content table tr th, td {
+    padding:8px;
+    border: 1px solid black;
+}
+
+.footer {
+    background-color: rgba(235,166,125,0.92);
+    margin:10px;
+    border-radius: 10px;
+    height: 90px;
+    clear:both;
+    box-shadow: 5px 5px 5px grey;
+    border-style: outset;
+}
+

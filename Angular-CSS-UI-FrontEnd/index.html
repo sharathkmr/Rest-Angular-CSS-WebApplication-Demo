@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="_css/style_sheet1.css" content="stylesheet">
+    <script src="lib/angular-1.5.8/angular.js"></script>
+    <script src="_js/script1.js"></script>
+</head>
+<body ng-controller="AppController">
+    <div class="header">
+        <h5 ng-show="advTask" ng-click="logoutAction()"><a href="#">logout</a></h5>
+    </div>
+    <div class="sideNav" >
+    <ul>
+        <li ng-click="homeClick()"><a href="#">Home</a></li>
+        <li ng-click="loginClick()"><a href="#">Login</a></li>
+        <li ng-show="advTask" ng-click="employeeClick()"><a href="#">Employees</a></li>
+        <li ng-show="advTask"><a href="#">Students</a></li>
+    </ul>
+    </div>
+<div class="content" name="divContent">
+    <h3>{{content_type}}</h3>
+    <ng-include src="template"></ng-include>
+</div>
+<div class="footer">
+
+</div>
+<script type="text/ng-template" id="home">
+
+
+<h1>Welcome</h1>
+
+</script>
+
+    <script type="text/ng-template" id="employee">
+    <span>
+        <table >
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>Salary</th>
+                <th>UserName</th>
+                <th>Password</th>
+            </tr>
+            <tr ng-repeat="emp in data">
+                <td>{{emp.id}}</td>
+                <td>{{emp.name}}</td>
+                <td>{{emp.sal}}</td>
+                <td>{{emp.uname}}</td>
+                <td>{{emp.upass}}</td>
+            </tr>
+        </table>
+</span>
+    </script>
+
+    <script type="text/ng-template" id="login" >
+        <span ng-bind="loginStatus"></span>
+        <table>
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" ng-model="uname"></td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td><input type="text" id="pass" ng-model="pass"></td>
+            </tr>
+            <tr><td colspan="2"><input type="submit" value="Login" ng-click="loginCheck(uname,pass,loginStatus)"/></td></tr>
+        </table>
+    </script>
+
+</body>
+</html>

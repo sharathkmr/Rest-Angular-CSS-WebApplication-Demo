@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.angular.rest.test.model.Employee" table="EMPLOYEE">
+		<id name="id" type="int" column="ID">
+		<generator class="increment"></generator>
+		</id>
+		<property name="name" type="string" column="NAME" />
+		<property name="sal" type="float" column="SALARY" />
+		<property name="uname" type="string" column="USERNAME" />
+		<property name="upass" type="string" column="PASSWORD" />
+	</class>
+</hibernate-mapping>
